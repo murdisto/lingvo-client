@@ -1,0 +1,78 @@
+.progress-container{
+    margin-left:30%;
+    margin-right:30%;
+
+}
+.border{
+    width:100%;
+    background-color: grey;
+    border: black 2px solid;
+    border-radius: 20px;
+    
+}
+.ht0{
+    border-radius: 20px;
+    height: 30px;
+    width: 100%;
+    background-color: grey;
+}
+.ht1{
+    border-radius: 20px;
+    width: 10%;
+    height: 30px;
+    background-color: green;
+}
+.ht2{
+    border-radius: 20px;
+    width: 20%;
+    height: 30px;
+    background-color: green;
+}
+.ht3{
+    border-radius: 20px;
+    width: 30%;
+    height: 30px;
+    background-color: green;
+}
+.ht4{
+    border-radius: 20px;
+    width: 40%;
+    height: 30px;
+    background-color: green;
+}
+.ht5{
+    border-radius: 20px;
+    width: 50%;
+    height: 30px;
+    background-color: green;
+}
+.ht6{
+    border-radius: 20px;
+    width: 60%;
+    height: 30px;
+    background-color: green;
+}
+.ht7{
+    border-radius: 20px;
+    width: 70%;
+    height: 30px;
+    background-color: green;
+}
+.ht8{
+    border-radius: 20px;
+    width: 80%;
+    height: 30px;
+    background-color: green;
+}
+.ht9{
+    border-radius: 20px;
+    width: 90%;
+    height: 30px;
+    background-color: green;
+}
+.ht10{
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    background-color: green;
+}

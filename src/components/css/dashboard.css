@@ -1,0 +1,26 @@
+.dashboard{
+    display: grid;
+    grid-template-rows:auto auto auto;
+    grid-gap: 20px;
+    background-color: #333;
+    margin:20px;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+}
+
+.dashboard img{
+    float: left;
+}
+
+.customBr{
+    padding:5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.prof {
+  height: 100px;
+  width: 100px;
+}
