@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d1bc0265-e16f-4ebb-8ac6-e831a59fe0aa/deploy-status)](https://app.netlify.com/sites/lingvo/deploys)
 # [Lingvo](https://lingvo-client.herokuapp.com/)
-[Server Repo](https://github.com/thinkful-ei26/SpacedRepetition-Server-Michael-Scott)
+[Server Repo](https://github.com/murdisto/lingvo-server)
 
 Dummy account and password: <br>
   username: demo <br>
@@ -24,4 +24,4 @@ Dummy account and password: <br>
   Lingvo is a full-stack app built with the MERN stack.
 
 ## Code Base:
-All front end code can be found in this repo, and all the backend code can be found [here](https://github.com/thinkful-ei26/SpacedRepetition-Server-Michael-Scott).
+All front end code can be found in this repo, and all the backend code can be found [here](https://github.com/murdisto/lingvo-server).
