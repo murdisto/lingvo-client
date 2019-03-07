@@ -37,7 +37,7 @@ export class AnswerForm extends React.Component {
           className="login-form"
           onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}
         >
-          <label htmlFor="answer">Answer Here:</label>
+          <label htmlFor="answer"></label>
           <Field component={Input} type="text" name="answer" />
           <br />
           <button

@@ -1,33 +1,23 @@
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    text-align: center;
-    padding:20px;
+  .header-bar {
+    font-style: oblique;
+    width: 100vw;
+    height: 75px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 10%;
+    padding-left: 1px;
+    box-shadow: 1px 1px 10px #aaa;
 }
 
-  .topnav-left {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 5px 7px;
-  }
-
-  .topnav span {
-    color:white;
-    font-size: 40px;
-  }
-
-
-  .topnav-right {
-    float: right;
-    color: #f2f2f2;
-    background-color: dimgrey;
-    text-align: center;
-    padding: 5px 4px;
-    text-decoration: none;
-    font-size: 17px;
+.header-bar h1 {
+    margin-left: 15px;
     
-  }
-  html{
-      background-color:dimgray;
-  }
+}
+
+.header-bar button {
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 5px 10px;
+}

@@ -1,11 +1,28 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import {Field, reduxForm, focus} from 'redux-form';
 import {registerUser} from '../actions/users';
 import {login} from '../actions/auth';
-import Input from './input';
+
 import {required, nonEmpty, matches, length, isTrimmed} from '../validators';
 const passwordLength = length({min: 10, max: 72});
 const matchesPassword = matches('password');
+
+const renderField = ({
+  input,
+  label,
+  type,
+  placeholder,
+  meta: { touched, error, warning }
+}) => (
+  <div>
+    <label>{label}</label>
+    <input {...input} placeholder={placeholder} type={type} autoComplete="off" />
+    {touched &&
+        ((error && <span>{error}</span>) ||
+          (warning && <span>{warning}</span>))}
+  </div>
+);
 
 export class RegistrationForm extends React.Component {
   onSubmit(values) {
@@ -23,28 +40,41 @@ export class RegistrationForm extends React.Component {
         onSubmit={this.props.handleSubmit(values =>
           this.onSubmit(values)
         )}>
-        <label htmlFor="firstName">First name</label>
-        <Field component={Input} type="text" name="firstName" />
-        <label htmlFor="username">Username</label>
+        <label htmlFor="firstName"></label>
+        <Field 
+          component={renderField} 
+          type="text" 
+          name="firstName"
+          placeholder="Name"
+          validate={[required, isTrimmed]}
+          autoComplete="off"
+        />
+        <label htmlFor="username"></label>
         <Field
-          component={Input}
+          component={renderField}
           type="text"
           name="username"
+          placeholder="Username"
           validate={[required, nonEmpty, isTrimmed]}
+          autoComplete="off"
         />
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password"></label>
         <Field
-          component={Input}
+          component={renderField}
           type="password"
           name="password"
+          placeholder="Password"
           validate={[required, passwordLength, isTrimmed]}
+          autoComplete="off"
         />
-        <label htmlFor="passwordConfirm">Confirm password</label>
+        <label htmlFor="passwordConfirm"></label>
         <Field
-          component={Input}
+          component={renderField}
           type="password"
           name="passwordConfirm"
+          placeholder="Confirm Password"
           validate={[required, nonEmpty, matchesPassword]}
+          autoComplete="off"
         />
         <button
           type="submit"

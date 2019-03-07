@@ -29,8 +29,8 @@ export class HeaderBar extends React.Component {
     return (
       <React.Fragment>
         <header>
-          <div className="topnav">
-            <span href="#home">Lingvo</span>
+          <div className="header-bar">
+            <h1 href="#home">Lingvo</h1>
             {logOutButton}
           </div>
         </header>

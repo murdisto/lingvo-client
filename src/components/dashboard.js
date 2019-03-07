@@ -3,8 +3,9 @@ import { connect } from "react-redux";
 import requiresLogin from "./requires-login";
 import "./css/dashboard.css";
 import { fetchNextWord } from "../actions/submission";
-import Progressbar from "./progressbar";
+// eslint-disable-next-line no-unused-vars
 import AnswerForm from "./answer-form";
+// eslint-disable-next-line no-unused-vars
 import ScoreKeeper from "./score-keeper";
 
 export class Dashboard extends React.Component {
@@ -15,18 +16,12 @@ export class Dashboard extends React.Component {
   render() {
     return (
       <main className="dashboard">
-        <h1>Welcome {this.props.username}</h1>
-
-        <span>You have mastered {this.props.progress} words of Esperanto</span>
-        <Progressbar progress={this.props.progress} />
-        <div className="customBr" />
-        <div>
-          <h2>Translate this word to English:</h2>
-          <span>{this.props.question}</span>
+        <div className="status">
+          <p>Welcome {this.props.username}</p>
+          <p>You have learned {this.props.progress}/10 words.</p>
         </div>
-        <div className="customBr" />
-        <div className="gridRow">
-          <br />
+        <div className="answer card">
+          <p>Translate "{this.props.question}" to English:</p>
           <div>
             <AnswerForm /> <ScoreKeeper />
           </div>
