@@ -11,12 +11,12 @@ class ScoreKeeper extends React.Component {
       if (this.props.correct === true) {
         temp = (
           <div className="answer-div">
-            Nice, {this.props.userInput} is Correct
+            Correct!
           </div>
         );
       } else if (this.props.correct === false) {
         temp = (
-          <div className="answer-div">{this.props.userInput} is Incorrect</div>
+          <div className="answer-div">Sorry, {this.props.userInput} is incorrect.</div>
         );
       } else {
         temp = <div />;
@@ -34,13 +34,13 @@ class ScoreKeeper extends React.Component {
         overlayClassName="Overlay"
       >
         {temp}
+        <br/>
         <button onClick={() => this.props.dispatch(modalSetter(false))}>
-          Next Question
+          Next
         </button>
       </ReactModal>
     );
 
-    //console.log(this.props.correct);
   }
 }
 

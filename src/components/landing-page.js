@@ -12,14 +12,16 @@ export function LandingPage(props) {
 
   return (
     <div role="main" className="home">
-      <h1>Welcome to learning Esperanto</h1>
+      <h2>Learn Esperanto!</h2>
       <p>
-        Here you will learn how to speak esperanto. Login or register and give
-        it a try! We will track your progress and let you know how you are
-        doing. For your first lesson we will teach you hundo which means dog in
-        esperanto.
+        Here you will learn some words Esperanto. Login or register and give
+        it a try! We will track your progress and let you know how well you are
+        doing. For your first lesson we will teach you "hundo" which means dog in
+        Esperanto.
       </p>
-      <LoginForm />
+      <section className="subcard">
+        <LoginForm />
+      </section>
       <span>
         Not signed up? <Link to="/register">Register</Link>
       </span>
