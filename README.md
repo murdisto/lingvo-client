@@ -4,7 +4,7 @@
  
 
 ## Description
-  Lingvo is a simple web app that helps you learn Esperanto. Lingo implements
+  Lingvo is a simple web app that helps you learn Esperanto. Lingvo implements
   a linked list algorithm to utilize the spaced repetition method of memorization.
   Users are presented with a word in Esperanto and asked to enter the equivalent
   word in English. Based on a getting the word correct or incorrect, the user will
