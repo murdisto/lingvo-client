@@ -20,6 +20,25 @@
 
 ## Tech Stack:
   Lingvo is a full-stack app built with the MERN stack.
+  
+## API
+```        
+
+├── /auth
+│   └── POST
+│       ├── /login
+│       ├── /refresh
+│ 
+├── /users
+│   └── POST /
+│   
+├── /questions
+│   └── GET
+│       ├── /
+│       ├── /all
+│   └── POST /
+
+``` 
 
 ## Code Base:
 All front end code can be found in this repo, and all the backend code can be found [here](https://github.com/murdisto/lingvo-server).
