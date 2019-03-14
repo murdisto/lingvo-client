@@ -31,7 +31,10 @@
 │ 
 ├── /users
 │   └── POST /
-│   
+│   └── GET
+│       ├── /
+│       ├── /next
+│   └── PUT /submit
 ├── /questions
 │   └── GET
 │       ├── /
