@@ -13,7 +13,10 @@
   A user's progress is also stored when they log out. Upon their return, the user
   be presented with the last word they were given in their previous session.
 
-
+## Screenshots
+<img src="screenShots/lingvo.png" alt="sign in" width="800px" />
+<br />
+<img src="screenShots/lingvomob.png" alt="" width="400px" />
 
 ## Tech Stack:
   Lingvo is a full-stack app built with the MERN stack.
