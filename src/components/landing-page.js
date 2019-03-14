@@ -25,6 +25,15 @@ export function LandingPage(props) {
       <span>
         Not signed up? <Link to="/register">Register</Link>
       </span>
+     
+      <p>
+      Just want to demo the app? Use these:
+        <br /> 
+        Username: demo 
+        <br /> 
+        Password: password12
+      </p>
+            
     </div>
   );
 }
